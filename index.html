@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="style.css" rel="stylesheet" />
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
+<link href="//jschr.github.io/textillate/assets/animate.css" rel="stylesheet" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+<!--<script type="text/javascript" src="http://jschr.github.io/textillate/assets/jquery.fittext.js"></script>
+<script type="text/javascript" src="http://jschr.github.io/textillate/assets/jquery.lettering.js"></script>
+<script type="text/javascript" src="http://jschr.github.io/textillate/jquery.textillate.js"></script>-->
+<style type="text/css">
+
+</style>
+</head>
+<body>
+<div class="abs-center">
+    <!-- <img class="nhrobologo" src="http://www.highlandsrobotics.com/wp-content/uploads/2013/10/ROBOLOGO_111-e1410049470970.png" alt="nhrhsrobo logo"/> -->
+    <span class="center-title">Northern Highlands Robotics - <span class="year">2014</span></span>
+    <section class="page-list">
+        <a class="selscn col-4" id="link-code" href="2014/code.html">CODE</a>
+        <a class="selscn col-4" id="link-doc" href="2014/doc.html">DOC</a>
+        <a class="selscn col-4" id="link-cad" href="2014/cad.html">CAD</a>
+    </section>
+</div>
+
+<select class="yearsel">
+    <option value="2014">2014</option>
+    <option value="2013">2013</option>
+</select>
+<span class="arrow-up"></span>
+<a href="http://www.github.com/villa7" target="_blank"><i class="fa fa-github" id="git-link"></i></a>
+<script type="text/javascript">
+        $('.yearsel').change(function() {
+            var year = $(this).find(":selected").val()
+            $('.year').fadeOut(400, function() {
+                $('.year').html(year);
+                $('.year').fadeIn(400);
+            });
+            $('#link-code').attr('href', year + "/code.html");
+            $('#link-doc').attr('href', year + "/doc.html");
+            $('#link-cad').attr('href', year + "/cad.html");
+        });
+    </script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="instantclick.min.js" data-no-instant></script>
+</body>
+</html>

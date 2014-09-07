@@ -1,0 +1,221 @@
+html, body {
+    height: 100%;
+    overflow: hidden;
+    margin: 0px;
+}
+
+body {
+    background: #111;
+    color: #fff;
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-y: auto;
+}
+
+::selection {
+    background: #C34A2C
+}
+
+a {
+    color: #dc381f;
+    text-decoration: none;
+}
+a:hover {
+    color: #E55B3C;
+    border-color: #E55B3C;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.abs-center {
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    font-size: 33px;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    height: 50px;
+    width: 50%;
+    font-family: sans-serif;
+}
+
+.page-list {
+    margin: auto;
+    margin-top: 80px;
+    position: absolute;
+    left: 0; right: 0;
+    text-align: center;
+}
+
+.selscn {
+    height: auto;
+    position: relative;
+    margin: 0px 7px 0px 7px;
+    padding: 2px 15px;
+    text-decoration: none;
+    color: #DC381F;
+    border: #dc381f solid 2px;
+    -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;
+         -o-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+}
+
+.col-4 {
+    width: 33.3333333333%;
+}
+
+.nhrobologo, .center-title {
+    width: 70%;
+    height: auto;
+    margin: auto;
+    position: absolute;
+    left: 0; right: 0;
+}
+
+.center-title {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+}
+
+.yearsel {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    background: rgba(0,0,0,0);
+    border: none;
+    height: 30px;
+    width: 100px;
+    text-indent: 20px;
+    color: #333;
+    font-size: 20px;
+}
+
+.arrow-up {
+    position: absolute;
+    bottom: 8px;
+    right: 4px;
+    width: 0; 
+    height: 0; 
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 14px solid #333;
+}
+
+.left-menu {
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    width: 18%;
+    max-width: 280px;
+    min-width: 130px;
+    background: rgba(255,255,255,.02);
+    border-right: #000 1px solid;
+}
+.left-menu-pch {
+    width: 18%;
+    max-width: 280px;
+    min-width: 130px;
+    position: relative;
+    height: 100%;
+    float: left;
+    z-index: -1;
+}
+.left-menu-title {
+    width: 100%;
+    font-size: 30px;
+    float: left;
+    position: relative;
+    padding: 0px 5px;
+    margin: 5px 0px;
+}
+.left-menu-title a {
+    text-decoration: none;
+    color: #fff;
+}
+.left-menu-page-list {
+    list-style-type: none !important;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.left-menu-selscn {
+    height: auto;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.left-menu-selscn a {
+    text-decoration: none;
+    color: #DC381F;
+    font-size: 25px;
+    text-indent: 5px;
+    padding: 2px 0px;
+    width: 100%;
+    float: left;
+    -webkit-transition: all .1s ease-in-out;
+        -moz-transition: all .1s ease-in-out;
+        -ms-transition: all .1s ease-in-out;
+         -o-transition: all .1s ease-in-out;
+            transition: all .1s ease-in-out;
+}
+.left-menu-selscn a:hover {
+    background: rgba(255,255,255,.10);
+}
+.active {
+    background: rgba(255,255,255,.05);
+}
+.main-body {
+    float: left;
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 30px 20px 30px 30px;
+    /*padding: 30px;*/
+    margin: 0;
+    word-wrap: break-word;
+
+}
+
+thead {
+    background: rgba(255,255,255,0.08);
+}
+tbody {
+    background: rgba(255,255,255,0.04);
+}
+th, td {
+    padding: 4px 10px;
+}
+
+#git-link {
+    color: #333;
+    font-size: 40px;
+    height: 40px;
+    width: auto;
+    position: absolute;
+    left: 10px;
+    bottom: 7px;
+    -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+         -o-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+}
+
+#git-link:hover {
+    color: #E38AAE;
+    cursor: pointer;
+    -ms-transform:rotate(-15deg);
+    -webkit-transform:rotate(-15deg);
+    -moz-transform:rotate(-15deg);
+    -o-transform:rotate(-15deg);
+    transform:rotate(-15deg);
+}
